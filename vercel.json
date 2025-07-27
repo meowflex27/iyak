@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/movie", "dest": "/api/movie.js" },
+    { "src": "/api/tv", "dest": "/api/tv.js" }
+  ]
+}
